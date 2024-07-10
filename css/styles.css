@@ -1,0 +1,269 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(320px, 1fr));
+    gap: 20px;
+}
+
+.container .box {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 15px;
+    position: relative;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.container .box .box-title {
+    z-index: 1;
+    margin-bottom: 15px;
+}
+.container .box .box-title h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.container .box .box-title p {
+    font-size: 0.75rem;
+    color: #777;
+    margin-top: 3px;
+}
+.container .box .imgs .user-img {
+    width: 45px;
+    position: absolute;
+    top: calc(100px - 45px / 2);
+    border-radius: 50%;
+    border: solid 4px #fff;
+}
+.container .box .imgs .banner-img {
+    height: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.container .box .imgs::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #eee;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.container .box .user-info {
+    margin-top: 65px;
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.container .box .user-info::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 110%;
+    height: 1px;
+    background-color: #eee;
+}
+.container .box .user-info::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 110%;
+    height: 1px;
+    background-color: #eee;
+}
+.container .box .user-info h3 {
+    font-size: .9rem;
+    font-weight: 500;
+}
+.container .box .user-info p {
+    margin-top: 10px;
+    color: #777;
+}
+
+.container .box .button {
+    display: flex;
+    justify-content: flex-end;
+}
+.container .box button {
+    background-color: #2196f3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: small;
+    cursor: pointer;
+}
+.container .box button a {
+    color: #fff;
+}
+
+.container .box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .box .input-design {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #eee;
+    margin-bottom: 15px;
+    outline: none;
+}
+.container .box .input-design::placeholder {
+    color: #999;
+    font-size: small;
+}
+.container .box textarea.input-design {
+    padding: 10px;
+    resize: none;
+}
+
+.container .box .targets-stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.container .box .targets-stats .row {
+    display: flex;
+}
+.container .box .targets-stats .row:not(:last-child) {
+    margin-bottom: 15px;
+}
+.container .box .targets-stats .row span.icon {
+    width: 70px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+.container .box .targets-stats .row:first-child span {
+    color: #0075ff;
+    background-color: #cce3ff;
+}
+.container .box .targets-stats .row:nth-child(2) span {
+    color: #f59e0b;
+    background-color: #fdecce;
+}
+.container .box .targets-stats .row:last-child span {
+    color: #22c55e;
+    background-color: #d3f3df;
+}
+
+.container .box .targets-stats .stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px 0;
+}
+.container .box .targets-stats .stats p {
+    margin: 0;
+    color: #777;
+    font-size: small;
+}
+.container .box .targets-stats .stats h3 {
+    margin: 0;
+    font-size: 1rem;
+}
+.container .box .targets-stats .stats span {
+    width: 100%;
+    height: 3px;
+    position: relative;
+}
+.container .box .targets-stats .row .stats span::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+.container .box .targets-stats .row .stats p:last-child {
+    color: #fff;
+    position: absolute;
+    top: -25px;
+    font-size: .6rem;
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+.container .box .targets-stats .row .stats span::before {
+    content: "";
+    position: absolute;
+    top: -9px;
+    border: solid 5px;
+}
+
+.container .box .targets-stats .row:first-child .stats span::after {
+    width: 80%;
+    background-color: #0075ff;
+}
+.container .box .targets-stats .row:nth-child(2) .stats span::after {
+    width: 55%;
+    background-color: #f59e0b;
+}
+.container .box .targets-stats .row:last-child .stats span::after {
+    width: 75%;
+    background-color: #22c55e;
+}
+
+.container .box .targets-stats .row:first-child .stats p:last-child {
+    left: calc(80% - 30px / 2);
+    background-color: #0075ff;
+}
+.container .box .targets-stats .row:nth-child(2) .stats p:last-child {
+    left: calc(55% - 30px / 2);
+    background-color: #f59e0b;
+}
+.container .box .targets-stats .row:last-child .stats p:last-child {
+    left: calc(75% - 30px / 2);
+    background-color: #22c55e;
+}
+
+.container .box .targets-stats .row:first-child .stats span::before {
+    left: calc(80% - 10px / 2);
+    border-color:  #0075ff transparent transparent;
+}
+.container .box .targets-stats .row:nth-child(2) .stats span::before {
+    left: calc(55% - 10px / 2);
+    border-color:  #f59e0b transparent transparent;
+}
+.container .box .targets-stats .row:last-child .stats span::before {
+    left: calc(75% - 10px / 2);
+    border-color:  #22c55e transparent transparent;
+}
+
+.container .box .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 10px;
+}
+.container .box .grid .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border: solid 2px #eee;
+    border-radius: 5px;
+}
+.container .box .grid .row i {
+    font-size: 1.25rem;
+}
+.container .box .grid .row h3 {
+    margin: 10px 0;
+}
+.container .box .grid .row p {
+    font-size: small;
+    color: #777;
+}
