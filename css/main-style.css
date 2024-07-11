@@ -33,7 +33,7 @@ a {
 
 /* start side bar */
 .side-bar {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 200px;
@@ -41,7 +41,7 @@ a {
     z-index: 100;
     padding: 0 20px;
     background-color: #fff;
-    box-shadow: 0 0 15px #e8e8e8;
+    box-shadow: 15px 0 15px -15px #e8e8e8;
 }
 .side-bar h1 {
     font-size: 1.25rem;
@@ -103,7 +103,8 @@ a {
 @media (max-width: 600px) {
     .side-bar {
         transition: .7s;
-        left: -200px;
+        left: -300px;
+        width: 300px;
     }    
     .page .fa-bars {
         display: block;
@@ -117,6 +118,22 @@ a {
     .page .fa-bars:hover + .side-bar {
         left: 0;
         position: fixed;
+    }
+    .side-bar h1 {
+        font-size: 2rem;
+        padding: 15px 0 20px;
+        margin-bottom: 40px;
+    }
+    .side-bar h1::before {
+       width: 120px;
+    }
+    .side-bar ul a {
+        padding: 20px;
+        font-size: 1.25rem;
+    }
+    .side-bar ul a span {
+        width: 30px;
+        margin-right: 20px;
     }
 }
 @keyframes slid-in {
