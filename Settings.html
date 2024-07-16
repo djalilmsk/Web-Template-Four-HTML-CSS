@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- main css file -->
+  <link rel="stylesheet" href="css/Settings.css">
+  <link rel="stylesheet" href="css/main-style.css">
+
+  <!-- Normalize css file -->
+  <link rel="stylesheet" href="css/Normalize.css">
+
+  <!-- font awesome css file -->
+  <!-- <link rel="stylesheet" href="css/icons/all.min.css">  -->
+
+  <script src="https://kit.fontawesome.com/5da28a4df3.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="page">
+    <!-- Start side-bar -->
+    <i class="fa-solid fa-bars"></i>
+    <div class="side-bar">
+      <h1>Elzero</h1>
+      <ul> <!-- side-bar content -->
+        <li><a href="index.html">
+            <span>
+              <i class="fa-solid fa-chart-bar"></i>
+            </span>
+            <p>Dashboard</p>
+          </a></li>
+        <li><a href="Settings.html" class="active">
+            <span>
+              <i class="fa-solid fa-gear"></i>
+            </span>
+            <p>Settings</p>
+        </li></a>
+        <li><a href="Profile.html">
+            <span>
+              <i class="fa-regular fa-user"></i>
+            </span>
+            <p>Profile</p>
+        </li></a>
+        <li><a href="Projects.html">
+            <span>
+              <i class="fa-solid fa-diagram-project"></i>
+            </span>
+            <p>Projects</p>
+          </a></li>
+        <li><a href="Courses.html">
+            <span>
+              <i class="fa-solid fa-graduation-cap"></i>
+            </span>
+            <p>Courses</p>
+          </a></li>
+        <li><a href="Friends.html">
+            <span>
+              <i class="fa-regular fa-circle-user"></i>
+            </span>
+            <p>Friends</p>
+          </a></li>
+        <li><a href="Files.html">
+            <span>
+              <i class="fa-regular fa-file"></i>
+            </span>
+            <p>Files</p>
+          </a></li>
+        <li><a href="Plans.html">
+            <span>
+              <i class="fa-regular fa-credit-card"></i>
+            </span>
+            <p>Plans</p>
+          </a></li>
+      </ul>
+    </div>
+    <!-- End side-bar -->
+
+    <!-- Start content -->
+    <div class="content">
+      <!-- Start content header -->
+      <header>
+        <form action="">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Type A Keyword">
+        </form>
+        <ul>
+          <li> <!-- for notification -->
+            <i class="fa-regular fa-bell"></i>
+          </li>
+          <li> <!-- user profile -->
+            <a href="Profile.html"><img src="imgs/user profile.png" alt=""></a>
+          </li>
+        </ul>
+      </header>
+      <!-- End content header -->
+
+      <!-- Start Active part -->
+      <div class="active-part">
+        <div class="active-part-title">
+          <h1>Settings</h1>
+        </div>
+
+        <div class="container">
+
+          <div class="box">
+            <div class="box-title">
+              <h2>Site Control</h2>
+              <p>Control The Website If There Is Maintenance</p>
+            </div>
+            <div class="control">
+              <div class="row">
+                <div class="text">
+                  <h3>Website Control</h3>
+                  <p>Open/Close Website And Type The Reason</p>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" checked>
+                  <span class="slider">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <i class="fa-solid fa-circle-xmark"></i>
+                  </span>
+                </label>
+              </div>
+              <div class="row">
+                <textarea name="" id="" placeholder="Close Message Content"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="box-title">
+              <h2>General Info</h2>
+              <p>General Information About Your Account</p>
+            </div>
+            <div class="info-input">
+              <div class="row">
+                <label for="name">First Name</label>
+                <input type="text" name="name" id="name" placeholder="First Name">
+              </div>
+              <div class="row">
+                <label for="name">Last Name</label>
+                <input type="text" name="name" id="name" placeholder="Last Name">
+              </div>
+              <div class="row">
+                <label for="name">Email</label>
+                <form action="">
+                  <input type="email" name="name" id="name" placeholder="example@example.com">
+                  <button>Change</button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="box-title">
+              <h2>Security Info</h2>
+              <p>Security Information About Your Acount</p>
+            </div>
+            <div class="security-info">
+              <div class="row">
+                <div class="text">
+                  <h3>Password</h3>
+                  <p>Last Change On 25/10/2021</p>
+                </div>
+                <button>Change</button>
+              </div>              
+              <div class="row">
+                <div class="text">
+                  <h3>Two-Factor Authentication</h3>
+                  <p>Enable/Disable The Feature</p>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" checked>
+                  <span class="slider">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <i class="fa-solid fa-circle-xmark"></i>
+                  </span>
+                </label>
+              </div>
+              <div class="row">
+                <div class="text">
+                  <h3>Devices</h3>
+                  <p>Check the Login Devices List</p>
+                </div>
+                <div class="gray-bg black-c">
+                  <button>Devices</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="box-title">
+              <h2></h2>
+              <p></p>
+            </div>
+            <div class="box-content">
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- End Active part -->
+    </div>
+    <!-- End content -->
+  </div>
+
+</body>
+
+</html>
